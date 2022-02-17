@@ -1,4 +1,5 @@
 let arr = [1, 5, 2, 4, 7, 3, 6, 8, 9, 5, 10];
+
 // const total = arr.length
 // const firstHlaf = arr.filter((i) => i < arr.length / 2);
 // const half = arr.filter((i) => i > arr.length / 2);
@@ -102,6 +103,7 @@ const b = require("./obj2.json");
 
 // console.log({ diffOne, diffTwo });
 const isObj = (obj) => typeof obj === "object" && !Array.isArray(obj);
+
 function diffTest(obj1, obj2, path = []) {
   let result = {
     changed: {},
@@ -122,12 +124,15 @@ function diffTest(obj1, obj2, path = []) {
       if (type === "unchanged") {
         continue;
       }
-      result[type][key] = { ...value, path: path.concat(key) };
+      result[type][key] = {
+        ...value,
+        //  path: path.concat(key)
+      };
     } else {
       const { changed, removed, added } = diffTest(
         obj1[key],
-        obj2[key],
-        path.concat(key)
+        obj2[key]
+        // path.concat(key)
       );
       // result = { ...result, ...v };
       result.changed = { ...result.changed, ...changed };
@@ -185,7 +190,7 @@ function diff(objA, objB, key) {
     acc[item.externalId] = index;
     return acc;
   }, {});
-
+  console.log(mapping1);
   const externalIds2 = array2.map((item) => item.externalId);
 
   const mapping2 = array2.reduce((acc, item, index) => {
@@ -198,12 +203,15 @@ function diff(objA, objB, key) {
   const diffs = set.map((externalId) => {
     const index1 = mapping1[externalId];
     const index2 = mapping2[externalId];
+
     if (!index1 || !index2) {
-      return { externalId, msg: "chnage me soon" };
+      return { externalId };
     }
+
     const diff = diffTest(array1[index1], array2[index2]);
     return { externalId, ...diff };
   });
+
   console.log(
     JSON.stringify(
       diffs.find(
