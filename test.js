@@ -180,45 +180,63 @@ function diff(objA, objB, key) {
   };
 }
 
-(function test() {
-  const array1 = a.data.collection;
-  const array2 = b.data.collection;
+const hasIdentityData = (arr) => {
+  const eltCollection = arr
+    .filter((elt) => {
+      if (
+        elt.properties["Identity Data"] &&
+        elt.properties["Identity Data"]["Type Name"]
+      ) {
+        return true;
+      } else return false;
+    })
+    .filter((i) => i);
 
-  const externalIds1 = array1.map((item) => item.externalId);
+  return eltCollection;
+};
+
+(function test() {
+  // const array1 = a.data.collection;
+  // const array2 = b.data.collection;
+  const array1 = hasIdentityData(a.data.collection);
+  const array2 = hasIdentityData(b.data.collection);
 
   const mapping1 = array1.reduce((acc, item, index) => {
     acc[item.externalId] = index;
     return acc;
   }, {});
-  console.log(mapping1);
-  const externalIds2 = array2.map((item) => item.externalId);
 
   const mapping2 = array2.reduce((acc, item, index) => {
     acc[item.externalId] = index;
     return acc;
   }, {});
 
+  const externalIds1 = array1.map((item) => item.externalId);
+  const externalIds2 = array2.map((item) => item.externalId);
   let set = Array.from(new Set([...externalIds1, ...externalIds2]));
 
   const diffs = set.map((externalId) => {
     const index1 = mapping1[externalId];
     const index2 = mapping2[externalId];
 
-    if (!index1 || !index2) {
-      return { externalId };
+    if (!index1 && index2) {
+      return { id: externalId, msg: "element added" };
     }
-
+    if (index1 && !index2) {
+      return { id: externalId, msg: "element removed" };
+    }
     const diff = diffTest(array1[index1], array2[index2]);
+
     return { externalId, ...diff };
   });
-
-  console.log(
-    JSON.stringify(
-      diffs.find(
-        (v) => v.externalId === "69b68d96-c6cf-46b9-abd8-22ecf802bab3-00295823"
-      ),
-      null,
-      2
-    )
-  );
+  console.log(JSON.stringify(diffs, null, 2));
+  // console.log(
+  //   JSON.stringify(
+  //     diffs.find(
+  //       (v) => v.externalId === "69b68d96-c6cf-46b9-abd8-22ecf802bab3-00295823"
+  //     ),
+  //     null,
+  //     2
+  //   )
+  // );
 })();
