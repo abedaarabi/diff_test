@@ -148,13 +148,13 @@
       {
         "objectid": 10842,
         "name": "Origin indicator_Triangle_SITE_MOE",
-        "externalId": "db6badd9-d426-4cbc-918b-6035ccbdd3d1",
+        "externalId": "ab93805e-6b79-48a4-93bc-6f05967cc18a",
         "properties": {}
       },
       {
         "objectid": 168,
         "name": "Site",
-        "externalId": "dced1c85-6872-4629-a023-6d03a3eadb91",
+        "externalId": "f962f071-f5e1-45d9-aff3-bacac4bad252",
         "properties": {}
       },
       {
@@ -196,8 +196,8 @@
             "Base is Attached": "No",
             "Base Extension Distance": "0.000 mm",
             "Top Constraint": "Up to level: Etage 0 (ET0 skal navngives 100% som akritekt Levels)",
-            "Unconnected Height": "6000.000 mm",
-            "Top Offset": "1000.000 mm",
+            "Unconnected Height": "8000.000 mm",
+            "Top Offset": "3000.000 mm",
             "Top is Attached": "No",
             "Top Extension Distance": "0.000 mm",
             "Room Bounding": "Yes",
@@ -216,7 +216,7 @@
             "Rebar Cover - Exterior Face": "35 mm <35 mm>",
             "Rebar Cover - Interior Face": "35 mm <35 mm>",
             "Rebar Cover - Other Faces": "",
-            "Estimated Reinforcement Volume": "102337.504 cm^3",
+            "Estimated Reinforcement Volume": "226304.248 cm^3",
             "LoadBearing": "Yes"
           },
           "Construction": {
@@ -230,8 +230,8 @@
           },
           "Dimensions": {
             "Length": "12700.000 mm",
-            "Area": "76.200 m^2",
-            "Volume": "38.100 m^3"
+            "Area": "101.600 m^2",
+            "Volume": "50.800 m^3"
           },
           "Identity Data": {
             "Type Name": "231 - Yttervegg 500",
@@ -392,13 +392,13 @@
       {
         "objectid": 11909,
         "name": "Basic Wall",
-        "externalId": "1b1ebd3f-e5d4-4988-8c26-188cc1181535",
+        "externalId": "603e4933-74b7-4414-9c91-e8efd42cd0b8",
         "properties": {}
       },
       {
         "objectid": 11060,
         "name": "Walls",
-        "externalId": "278b21f8-a1c6-4bc3-a436-cd27ecfcf297",
+        "externalId": "ea061406-025e-4674-a493-5cb6ac075f8f",
         "properties": {}
       },
       {
@@ -525,9 +525,9 @@
         }
       },
       {
-        "objectid": 11917,
-        "name": "Rebar Bar [322782]",
-        "externalId": "7eb5f59b-01fb-40ca-a8eb-0b862540361c-0004ecde",
+        "objectid": 11968,
+        "name": "Rebar Bar [322867]",
+        "externalId": "d2c2ed09-0342-4e93-a1b9-0f6e433237f5-0004ed33",
         "properties": {
           "Visibility": {
             "Tender Code": ""
@@ -558,7 +558,7 @@
           "Structural": {
             "Total vekt (kg)": "553,442",
             "Armeringsvekt (kg)": "6,588",
-            "Reinforcement Volume": "51168.752 cm^3",
+            "Reinforcement Volume": "175135.496 cm^3",
             "LoadBearing": "No"
           },
           "Graphics": {
@@ -567,7 +567,7 @@
           },
           "Construction": {
             "Partition": "E10-K1-YV",
-            "Rebar Number": "1",
+            "Rebar Number": "2",
             "Schedule Mark": "02",
             "Enhet": "STK",
             "Støpeetappe": "",
@@ -587,16 +587,16 @@
             "Vekt per meter": "1.580"
           },
           "Dimensions": {
-            "A": "1330.000 mm",
+            "A": "5000.000 mm",
             "B": "430.000 mm",
-            "C": "1330.000 mm",
+            "C": "5000.000 mm",
             "D": "0.000 mm",
             "E": "0.000 mm",
             "F": "0.000 mm",
             "H": "0.000 mm",
             "R": "0.000 mm",
-            "Bar Length": "3029.673 mm",
-            "Total Bar Length": "254492.495 mm",
+            "Bar Length": "10369.673 mm",
+            "Total Bar Length": "871052.495 mm",
             "Bar Diameter": "16.000 mm",
             "Standard Bend Diameter": "50.000 mm",
             "Standard Hook Bend Diameter": "50.000 mm",
@@ -707,19 +707,19 @@
       {
         "objectid": 11913,
         "name": "Rebar Bar",
-        "externalId": "346fc5b8-9017-4d5f-8043-b06a922e41ad",
+        "externalId": "887a3186-8df3-46c2-be51-2343193f41a2",
         "properties": {}
       },
       {
         "objectid": 11062,
         "name": "Structural Rebar",
-        "externalId": "14bcb6e0-e666-4024-8506-e7f2aa6ae613",
+        "externalId": "10375389-5cec-4d1a-b675-7bbd3ce071ef",
         "properties": {}
       },
       {
         "objectid": 1,
         "name": "Model",
-        "externalId": "doc_c17cf1bc-4486-438b-8dbe-c31e571f29b1",
+        "externalId": "doc_c43f86e7-c3bd-4bd7-bac4-a7c7901a0bb7",
         "properties": {
           "Route Analysis": {
             "Route Analysis Settings": ""

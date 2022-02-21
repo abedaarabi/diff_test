@@ -148,13 +148,13 @@
       {
         "objectid": 10842,
         "name": "Origin indicator_Triangle_SITE_MOE",
-        "externalId": "ab93805e-6b79-48a4-93bc-6f05967cc18a",
+        "externalId": "28d51aa0-f753-462e-a013-42d50f31ba28",
         "properties": {}
       },
       {
         "objectid": 168,
         "name": "Site",
-        "externalId": "f962f071-f5e1-45d9-aff3-bacac4bad252",
+        "externalId": "1dab4e7b-f0a8-4728-892a-350abcdcf7ef",
         "properties": {}
       },
       {
@@ -216,7 +216,7 @@
             "Rebar Cover - Exterior Face": "35 mm <35 mm>",
             "Rebar Cover - Interior Face": "35 mm <35 mm>",
             "Rebar Cover - Other Faces": "",
-            "Estimated Reinforcement Volume": "226304.248 cm^3",
+            "Estimated Reinforcement Volume": "226642.032 cm^3",
             "LoadBearing": "Yes"
           },
           "Construction": {
@@ -392,13 +392,13 @@
       {
         "objectid": 11909,
         "name": "Basic Wall",
-        "externalId": "603e4933-74b7-4414-9c91-e8efd42cd0b8",
+        "externalId": "1f469e6f-2a99-4c0f-b824-21b2027f79f6",
         "properties": {}
       },
       {
         "objectid": 11060,
         "name": "Walls",
-        "externalId": "ea061406-025e-4674-a493-5cb6ac075f8f",
+        "externalId": "e3ed1d58-5248-4a8a-9d6a-e32d359fe47a",
         "properties": {}
       },
       {
@@ -435,7 +435,7 @@
           "Structural": {
             "Total vekt (kg)": "553,442",
             "Armeringsvekt (kg)": "6,588",
-            "Reinforcement Volume": "51168.752 cm^3",
+            "Reinforcement Volume": "51506.536 cm^3",
             "LoadBearing": "No"
           },
           "Graphics": {
@@ -465,15 +465,15 @@
           },
           "Dimensions": {
             "A": "1330.000 mm",
-            "B": "430.000 mm",
+            "B": "450.000 mm",
             "C": "1330.000 mm",
             "D": "0.000 mm",
             "E": "0.000 mm",
             "F": "0.000 mm",
             "H": "0.000 mm",
             "R": "0.000 mm",
-            "Bar Length": "3029.673 mm",
-            "Total Bar Length": "254492.495 mm",
+            "Bar Length": "3049.673 mm",
+            "Total Bar Length": "256172.495 mm",
             "Bar Diameter": "16.000 mm",
             "Standard Bend Diameter": "50.000 mm",
             "Standard Hook Bend Diameter": "50.000 mm",
@@ -707,19 +707,19 @@
       {
         "objectid": 11913,
         "name": "Rebar Bar",
-        "externalId": "887a3186-8df3-46c2-be51-2343193f41a2",
+        "externalId": "686e9e77-eefd-48fe-81e8-84e8df1bfd93",
         "properties": {}
       },
       {
         "objectid": 11062,
         "name": "Structural Rebar",
-        "externalId": "10375389-5cec-4d1a-b675-7bbd3ce071ef",
+        "externalId": "dcab67a9-64c0-495f-b7c5-ce2588917e2d",
         "properties": {}
       },
       {
         "objectid": 1,
         "name": "Model",
-        "externalId": "doc_c43f86e7-c3bd-4bd7-bac4-a7c7901a0bb7",
+        "externalId": "doc_072d3793-de1b-4fe6-8115-da48b69c7375",
         "properties": {
           "Route Analysis": {
             "Route Analysis Settings": ""
